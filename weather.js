@@ -20,7 +20,7 @@ const getWeather=async (city)=>
 {
     try{
 
-        const response= await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=dab3af44de7d24ae7ff86549334e45bd`,
+        const response= await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=19212479190384104bdd40160f5b20b7`,
    
             {mode: 'cors'}
         );
@@ -80,7 +80,7 @@ if(navigator.geolocation)
     lat=position.coords.latitude;
     const proxy="https://cors-anywhere.herokuapp.com/";
 
-        const api=`${proxy}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=dab3af44de7d24ae7ff86549334e45bd     `
+        const api=`${proxy}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=19212479190384104bdd40160f5b20b7`
 
         fetch(api).then((response)=>{
 
